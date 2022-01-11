@@ -1,0 +1,22 @@
+useDynLib(BNSP,.registration = TRUE)
+
+import(stats,ggplot2,plot3D,threejs,coda,cubature,Formula,plyr,mgcv,corrplot,label.switching)
+
+importFrom("grDevices", "rainbow")
+importFrom("graphics", "par")
+importFrom("graphics", "plot")
+importFrom("utils", "read.table")
+importFrom("gridExtra", "grid.arrange")
+importFrom("utils", "write.table")
+
+export(dpmj)
+S3method(print,bnp)
+
+export(mvrm,lmrm,sm,s,te,ti,mvrm2mcmc)
+S3method(plot,mvrm)
+S3method(predict,mvrm)
+S3method(print,mvrm)
+S3method(summary,mvrm)
+export(continue,plotCorr,histCorr,clustering)
+
+export(chol)
